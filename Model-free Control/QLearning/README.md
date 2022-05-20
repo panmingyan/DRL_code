@@ -37,3 +37,6 @@ Sarsa 是用自己的策略产生了 S,A,R,S',A' 这一条轨迹。然后拿着 
 * 比较 Q-learning 和 Sarsa 的更新公式可以发现，Sarsa 并没有选取最大值的 max 操作，因此，
   * Q-learning 是一个非常激进的算法，希望每一步都获得最大的利益；
   * 而 Sarsa 则相对非常保守，会选择一条相对安全的迭代路线。
+
+## 参考资料：
+1.[EasyRL](https://datawhalechina.github.io/easy-rl/#/chapter3/chapter3?id=sarsa-on-policy-td-control)
