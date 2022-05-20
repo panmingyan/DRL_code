@@ -98,7 +98,6 @@ def eval(cfg,env,agent):
             next_state, reward, done, p = env.step(action)
             ep_reward += reward
             state = next_state
-            print(state)
             time.sleep(0.5)
             env.render()
             if done:
