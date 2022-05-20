@@ -2,11 +2,11 @@
 
 ## 使用说明
 
-运行```main.py```即可
+运行```task0_train.py```即可
 
 ## 环境说明
 
-见[环境说明](https://github.com/JohnJim0816/reinforcement-learning-tutorials/blob/master/env_info.md)中的The Racetrack
+使用openai gym中的[Cliff Walking](https://www.gymlibrary.ml/environments/toy_text/cliff_walking/)
 
 ## 算法伪代码
 
