@@ -71,7 +71,7 @@ def train(cfg,env,agent):
             if done:
                 break  
         if ma_rewards:
-            ma_rewards.append(ma_rewards[-1]*0.9+ep_reward*0.1)
+            ma_rewards.append(ma_rewards[-1]*0.9+ep_reward*0.1)               # 使用滑动平均的reward让曲线更加平滑便于分析
         else:
             ma_rewards.append(ep_reward)
         rewards.append(ep_reward)
@@ -103,7 +103,7 @@ def eval(cfg,env,agent):
             if done:
                 break  
         if ma_rewards:
-            ma_rewards.append(ma_rewards[-1]*0.9+ep_reward*0.1)
+            ma_rewards.append(ma_rewards[-1]*0.9+ep_reward*0.1)           # 使用滑动平均的reward让曲线更加平滑便于分析
         else:
             ma_rewards.append(ep_reward)
         rewards.append(ep_reward)
