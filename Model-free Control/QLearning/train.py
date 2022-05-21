@@ -1,4 +1,5 @@
 import time
+import numpy as np
 
 def train(cfg, env, agent):
     print('开始训练！')
@@ -21,7 +22,7 @@ def train(cfg, env, agent):
             ma_rewards.append(ma_rewards[-1]*0.9+ep_reward*0.1)
         else:
             ma_rewards.append(ep_reward)
-        print("回合数：{}/{}，奖励{:.1f}".format(i_ep+1, cfg.train_eps,ep_reward))
+        print("Episode:{}/{}: Ave_Reward:{}".format(i_ep + 1, cfg.train_eps, np.mean(rewards[-10:])) + '\n')
     print('完成训练！')
     return rewards,ma_rewards
     
@@ -35,7 +36,7 @@ def test(cfg,env,agent):
     for i_ep in range(cfg.test_eps):
         print("第%d轮" % (i_ep + 1) + '\n')
         ep_reward = 0  # 记录每个episode的reward
-        state = env.reset()  # 重置环境, 重新开一局（即开始新的一个回合）
+        state = env.reset()  # 重置环境,即开始新的回合
         env.render()
         while True:
             action = agent.predict(state)  # 根据算法选择一个动作
@@ -52,5 +53,7 @@ def test(cfg,env,agent):
         else:
             ma_rewards.append(ep_reward)
         print(f"回合数：{i_ep+1}/{cfg.test_eps}, 奖励：{ep_reward:.1f}")
+        if (i_ep+1)%10==0:
+            print("Episode:{}/{}: Ave_Reward:{}".format(i_ep+1, cfg.test_eps, np.mean(rewards)) + '\n')
     print('完成测试！')
     return rewards, ma_rewards
