@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 '''
-Author: John
-Email: johnjim0816@gmail.com
-Date: 2021-03-12 16:58:16
-LastEditor: John
-LastEditTime: 2021-03-13 11:02:50
-Discription: 
-Environment: 
+Author: P.M.Y
+Date: 2022-5-22 
 '''
 import numpy as np
 from collections import defaultdict
