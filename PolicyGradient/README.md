@@ -4,6 +4,14 @@
 Policy-based方法是强化学习中与Value-based(比如Q-learning)相对的方法，其目的是对策略本身进行梯度下降，相关基础知识参考[Datawhale-Policy Gradient](https://datawhalechina.github.io/leedeeprl-notes/#/chapter4/chapter4)。
 其中REINFORCE是一个最基本的Policy Gradient方法，主要解决策略梯度无法直接计算的问题，具体原理参考[CSDN-REINFORCE和Reparameterization Trick](https://blog.csdn.net/JohnJim0/article/details/110230703)
 
+## 使用说明
+
+运行```task.py```文件即可
+
+## 环境说明
+
+```task0.py```使用openai gym中的[Cart Pole](https://www.gymlibrary.ml/environments/classic_control/cart_pole/)
+
 ## 伪代码
 
 结合REINFORCE原理，其伪代码如下：
@@ -16,9 +24,9 @@ https://pytorch.org/docs/stable/distributions.html
 
 ![img](assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvaG5KaW0w,size_16,color_FFFFFF,t_70-20210428001336032.png)
 
-## 实现
-
 ## 参考
+
+[EasyRL](https://datawhalechina.github.io/easy-rl/#/chapter3/chapter3?id=sarsa-on-policy-td-control)
 
 [REINFORCE和Reparameterization Trick](https://blog.csdn.net/JohnJim0/article/details/110230703)
 
