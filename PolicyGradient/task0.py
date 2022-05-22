@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 '''
-Author: John
-Email: johnjim0816@gmail.com
-Date: 2020-11-22 23:21:53
-LastEditor: John
-LastEditTime: 2021-10-16 00:34:13
-Discription: 
-Environment: 
+Author: P.M.Y
+Date: 2022-5-22 
 '''
 import sys,os
 curr_path = os.path.dirname(os.path.abspath(__file__)) # 当前文件所在绝对路径
