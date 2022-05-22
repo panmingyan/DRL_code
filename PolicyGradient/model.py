@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 '''
-Author: John
-Email: johnjim0816@gmail.com
-Date: 2021-03-23 16:35:58
-LastEditor: John
-LastEditTime: 2021-12-21 23:21:26
-Discription: 
-Environment: 
+Author: P.M.Y
+Date: 2022-5-22 
 '''
 import torch.nn as nn
 import torch.nn.functional as F
