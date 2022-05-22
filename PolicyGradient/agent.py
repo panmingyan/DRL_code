@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 '''
-Author: John
-Email: johnjim0816@gmail.com
-Date: 2020-11-22 23:27:44
-LastEditor: John
-LastEditTime: 2021-10-16 00:43:52
-Discription: 
-Environment: 
+Author: P.M.Y
+Date: 2022-5-22 
 '''
 import torch
 from torch.distributions import Bernoulli
