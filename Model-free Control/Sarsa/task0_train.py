@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 '''
-Author: John
-Email: johnjim0816@gmail.com
-Date: 2021-03-11 17:59:16
-LastEditor: John
-LastEditTime: 2021-05-06 17:12:37
-Discription: 
-Environment: 
+Author: P.M.Y
+Date: 2022-5-22 
 '''
 import sys, os
 import time
