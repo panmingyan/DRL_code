@@ -6,7 +6,7 @@ Policy-based方法是强化学习中与Value-based(比如Q-learning)相对的方
 
 ## 使用说明
 
-运行```task.py```文件即可,运行结果存储在```outputs```文件夹中
+运行```task.py```文件即可，运行结果存储在```outputs```文件夹中
 
 ## 环境说明
 
