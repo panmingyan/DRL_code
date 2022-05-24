@@ -14,6 +14,8 @@ Policy-based方法是强化学习中与Value-based(比如Q-learning)相对的方
 
 ```task1.py```使用openai gym中的[Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/)
 
+```task2.py```使用openai gym中的[Acrobot](https://www.gymlibrary.ml/environments/classic_control/acrobot/)
+
 ## 伪代码
 
 结合REINFORCE原理，其伪代码如下：
