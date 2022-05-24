@@ -6,11 +6,13 @@ Policy-based方法是强化学习中与Value-based(比如Q-learning)相对的方
 
 ## 使用说明
 
-运行```task.py```文件即可
+运行```task.py```文件即可,运行结果存储在```outputs```文件夹中
 
 ## 环境说明
 
 ```task0.py```使用openai gym中的[Cart Pole](https://www.gymlibrary.ml/environments/classic_control/cart_pole/)
+
+```task1.py```使用openai gym中的[Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/)
 
 ## 伪代码
 
