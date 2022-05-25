@@ -2,13 +2,21 @@
 
 PPO是一种on-policy算法，具有较好的性能，其前身是TRPO算法，也是policy gradient算法的一种，它是现在 OpenAI 默认的强化学习算法，具体原理可参考[PPO算法讲解](https://datawhalechina.github.io/easy-rl/#/chapter5/chapter5)。PPO算法主要有两个变种，一个是结合KL penalty的，一个是用了clip方法，本文实现的是后者即```PPO-clip```。
 ## 伪代码
+
 要实现必先了解伪代码，伪代码如下：
 ![在这里插入图片描述](assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvaG5KaW0w,size_16,color_FFFFFF,t_70.png)
 这是谷歌找到的一张比较适合的图，本人比较懒就没有修改，上面的```k```就是第```k```个episode，第六步是用随机梯度下降的方法优化，这里的损失函数(即```argmax```后面的部分)可能有点难理解，可参考[PPO paper](https://arxiv.org/abs/1707.06347)，如下：
 ![在这里插入图片描述](assets/20210323154236878.png)
 第七步就是一个平方损失函数，即实际回报与期望回报的差平方。
-## 代码实战
-[点击查看完整代码](https://github.com/JohnJim0816/rl-tutorials/tree/master/PPO)
+
+## 使用说明
+
+运行```task.py```文件即可
+
+## 环境说明
+
+```task0.py```使用openai gym中的[Cart Pole](https://www.gymlibrary.ml/environments/classic_control/cart_pole/)
+
 ### PPOmemory
 首先第三步需要搜集一条轨迹信息，我们可以定义一个```PPOmemory```来存储相关信息：
 ```python
