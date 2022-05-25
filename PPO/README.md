@@ -1,3 +1,5 @@
+# PPO
+
 ## 原理简介
 
 PPO是一种on-policy算法，具有较好的性能，其前身是TRPO算法，也是policy gradient算法的一种，它是现在 OpenAI 默认的强化学习算法，具体原理可参考[PPO算法讲解](https://datawhalechina.github.io/easy-rl/#/chapter5/chapter5)。PPO算法主要有两个变种，一个是结合KL penalty的，一个是用了clip方法，本文实现的是后者即```PPO-clip```。
