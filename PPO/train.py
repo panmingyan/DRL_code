@@ -3,6 +3,7 @@ Author: P.M.Y
 Date: 2022-5-25
 '''
 import numpy as np
+import torch
 
 def train(cfg,env,agent):
     print('开始训练！')
@@ -23,6 +24,8 @@ def train(cfg,env,agent):
             if steps % cfg.update_fre == 0:
                 agent.update()
             state = state_
+        if type(ep_reward) == torch.Tensor:   # 如果ep_reward是tensor类型，则取出tensor中的值
+            ep_reward = ep_reward.item()
         print('Episode:', (i_ep + 1), ' Reward:', ep_reward)
         rewards.append(ep_reward)
         if ma_rewards:
@@ -42,15 +45,18 @@ def eval(cfg,env,agent):
     ma_rewards = []  # 记录所有回合的滑动平均奖励
     for i_ep in range(cfg.test_eps):
         state = env.reset()
-        env.render()
+        # env.render()
         done = False
         ep_reward = 0
         while not done:
+            env.render()
             action, prob, val = agent.choose_action(state)
             state_, reward, done, _ = env.step(action)
             ep_reward += reward
             state = state_
-            env.render()
+            # env.render()
+        if type(ep_reward) == torch.Tensor:   # 如果ep_reward是tensor类型，则取出tensor中的值
+            ep_reward = ep_reward.item()
         rewards.append(ep_reward)
         if ma_rewards:
             ma_rewards.append(
