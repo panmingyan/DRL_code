@@ -17,6 +17,10 @@ Double-DQN的好处是Nature DQN中使用max虽然可以快速让Q值向可能�
 或者这样更好理解如何同时为当前网络和目标网络：
 ![在这里插入图片描述](assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvaG5KaW0w,size_16,color_FFFFFF,t_70-20210328110837157.png)
 
+## 环境说明
+
+```task0.py```使用openai gym中的[Cart Pole](https://www.gymlibrary.ml/environments/classic_control/cart_pole/)
+
 ## 代码实战
 完整程序见[github](https://github.com/JohnJim0816/reinforcement-learning-tutorials/tree/master/DoubleDQN)。结合上面的原理，其实Double DQN改进来很简单，基本只需要在```update```中修改几行代码，如下：
 ```python
