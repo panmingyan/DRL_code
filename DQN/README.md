@@ -16,6 +16,12 @@ https://blog.csdn.net/JohnJim0/article/details/109557173)
 
 <img src="assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pvaG5KaW0w,size_16,color_FFFFFF,t_70.png" alt="img" style="zoom:50%;" />
 
+## 环境说明
+
+```task0.py```使用openai gym中的[Cart Pole](https://www.gymlibrary.ml/environments/classic_control/cart_pole/)
+
+```DQN_Breakout.ipynb```使用openai gym中的[Breakout](https://www.gymlibrary.ml/environments/atari/breakout/)
+
 ## 代码实现
 
 ### RL接口
