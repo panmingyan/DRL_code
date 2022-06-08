@@ -19,7 +19,7 @@ PPO是一种on-policy算法，具有较好的性能，其前身是TRPO算法，�
 
 ```task0.py```使用openai gym中的[Cart Pole](https://www.gymlibrary.ml/environments/classic_control/cart_pole/)
 
-```task1.py```使用openai gym中的[Pendulum](https://www.gymlibrary.ml/environments/classic_control/pendulum/)(代码还需优化)
+```task1.py```使用openai gym中的[Pendulum](https://www.gymlibrary.ml/environments/classic_control/pendulum/)(效果不是很好)
 
 ```task2.py```使用openai gym中的[Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/)
 
