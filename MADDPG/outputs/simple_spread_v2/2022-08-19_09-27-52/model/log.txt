@@ -1,0 +1,25 @@
+277148/1000000
+平均奖励值为：-97.782631
+
+100测试平均奖励值：-98.48181000000001
+
+self.algo_name = algo_name         # 算法名称
+        self.env_name = env_name           # 环境名称
+        self.device = device               # 训练所用设备
+        self.train_eps = 1000000               # 训练的回合数
+        self.test_eps = 100                 # 测试的回合数
+        self.gamma = 0.95                  # 折扣因子
+        self.max_step = 100000             # 单回合最大步数
+        self.critic_lr = 5e-4              # Critic网络的学习率
+        self.actor_lr = 5e-4               # Actor网络的学习率
+        self.memory_capacity = 1000000     # 经验回放的容量
+        self.batch_size = 1024               # mini-batch SGD中的批量大小
+        # self.target_update = 2             # 目标网络的更新频率
+        self.hidden1_dim = 64             # 网络隐藏层1维度
+        self.hidden2_dim = 64             # 网络隐藏层2维度
+        self.soft_tau = 1e-2               # 软更新参数
+        self.ep_r = 1000                     # 计算最后1000轮平均奖励，确定是否保存模型
+        self.seed = 666                    # 设置随机种子
+        self.epsilon_start = 0.3             # e-greedy策略中初始epsilon (接续训练时注意修改)
+        self.epsilon_end = 0.01               # e-greedy策略中的终止epsilon
+        self.epsilon_decay = 50000         # e-greedy策略中epsilon的衰减率
