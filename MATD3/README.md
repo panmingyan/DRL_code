@@ -1,7 +1,5 @@
-# DDPG
-
-#TODO
+# MATD3
 
 ## 伪代码
 
-![image-20210320151900695](assets/image-20210320151900695.png)
+![image-MATD3](asset/MATD3.png)
